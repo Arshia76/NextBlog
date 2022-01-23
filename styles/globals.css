@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-auth {
+    @apply bg-white h-full w-full p-4 text-black border-1 border-solid border-transparent 
+    text-xl rounded-xl focus:border-purple-500;
+  }
+
+  .register-btn {
+    @apply bg-cyan-800 text-2xl border-2 border-solid  text-white  
+    w-full rounded-xl border-transparent outline-none p-4
+    hover:bg-white hover:text-cyan-800 hover:border-2 hover:border-solid
+    hover:border-cyan-800 transition-all duration-1000 ease-out;
+  }
+}
+
+@layer utilities {
+  .border-1 {
+    border-width: 1px;
+  }
+}
