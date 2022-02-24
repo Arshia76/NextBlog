@@ -38,6 +38,17 @@ import MAXIMIZE from './Svg/maximize.svg';
 import CROSS from './Svg/cross.svg';
 import CROSSWHITE from './Svg/cross-white.svg';
 import REGISTER from './Images/register.jpg';
+import SHARE from './Svg/share.svg';
+import BOOKMARKFILLED from './Svg/filled/bookmark-filled.svg';
+import BOOKMARK from './Svg/bookmark.svg';
+import Image1 from './Images/Image1.jpg';
+import Image2 from './Images/Image2.jpg';
+import Person1 from './Images/person1.jpg';
+import Person2 from './Images/person2.jpg';
+import TIME from './Svg/time.svg';
+import CATEGORY from './Svg/category.svg';
+import TRASH_BIN from './Svg/trash-bin.svg';
+import PEN from './Svg/pen.svg';
 
 class Resource {
   static Images = {
@@ -47,20 +58,29 @@ class Resource {
     ENVIRONMENT2,
     ENVIRONMENT3,
     ENVIRONMENT4,
+    Image1,
+    Image2,
+    Person1,
+    Person2,
   };
 
   static Svg = {
     USER,
     PHONE,
+    TIME,
+    CATEGORY,
     PASSWORD,
     PASSWORD2,
     EMAIL,
     ATTACHMENT,
     GENDER,
+    PEN,
+    TRASH_BIN,
     CALENDAR,
     SEARCH,
     SEARCH2,
     CALENDAR2,
+    SHARE,
     SEND,
     CONTENT,
     EMOJI,
@@ -74,6 +94,7 @@ class Resource {
     PLUS,
     CROSS,
     CROSSWHITE,
+    BOOKMARK,
   };
 
   static FilledSVG = {
@@ -87,11 +108,16 @@ class Resource {
     GROUPFILLED,
     VIDEOFILLED,
     CAMERAFILLED,
+    BOOKMARKFILLED,
   };
 
   static Routes = {
     HOME: '/',
     AUTH: '/auth',
+    PROFILE: '/profile',
+    POSTS: '/posts',
+    ADD: '/posts/add',
+    EDIT: '/posts/edit',
   };
 }
 

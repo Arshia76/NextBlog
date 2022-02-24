@@ -2,16 +2,18 @@ import { useState } from 'react';
 import Resource from '../../public/Resource';
 import Image from 'next/image';
 
-const Auth = () => {
+const AuthPage = () => {
   const [login, setLogin] = useState(true);
   return (
     <div className={'w-screen h-screen flex justify-center items-center'}>
       <Image
         objectFit={'cover'}
         layout={'fill'}
+        priority='true'
         src={Resource.Images.REGISTER}
         loading='eager'
         className={'brightness-50'}
+        alt='auth-img'
       />
       <div
         className={
@@ -27,14 +29,14 @@ const Auth = () => {
           >
             <label
               className={'text-2xl text-white mb-2 self-start'}
-              htmlFor='fullName'
+              htmlFor='username'
             >
-              نام و نام‌خانوادگی
+              نام کاربری
             </label>
             <input
-              placeholder='نام و نام‌خانوادگی خود را وارد کنید'
+              placeholder='نام کاربری خود را وارد کنید'
               className={'input-auth placeholder-black'}
-              id='fullName'
+              id='username'
               type='text'
             />
           </div>
@@ -81,4 +83,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;
+export default AuthPage;
